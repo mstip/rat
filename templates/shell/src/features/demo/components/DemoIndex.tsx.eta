@@ -1,0 +1,7 @@
+import Typography from '@mui/material/Typography';
+
+export default function DemoIndex() {
+	return (
+		<Typography>Welcome to <%= it.name %></Typography>
+	)
+}

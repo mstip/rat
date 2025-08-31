@@ -1,0 +1,21 @@
+{
+  "name": "rat",
+  "version": "1.0.0",
+  "description": "react admin templates",
+  "keywords": [
+    "templates"
+  ],
+  "license": "MIT",
+  "author": "mstip",
+  "type": "module",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "node test"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0"
+  },
+  "dependencies": {
+    "eta": "^3.5.0"
+  }
+}
