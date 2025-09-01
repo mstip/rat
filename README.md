@@ -1,6 +1,20 @@
 # RAT - React Admin Templates
 lazy developers react admin templates and scripts 100% organic without ai
 
+# TODO
+- [DONE] copy and render logic
+- [SKIP] publish to npm and test if it works
+- [DONE] make package executable, test local and push to gh
+- continue with app dev: features, auth, crud views, custom views ...
+
+# Setup
+1. git clone the repo
+2. cd into repo and run npm install -g to install it global or in your project dir run npm i PATH_TO_REPO
+3. done
+
+# Usage
+- ```rat init --name <PROJECT_NAME>  --path <OPTIONAL_PATH>``` creates a new dir with the rat shell
+
 # Project Structure
 https://github.com/alan2207/bulletproof-react/blob/master/docs/project-structure.md 
 
@@ -19,3 +33,7 @@ src
 |
 +-- lib                 # external lib configs
 ```
+
+# Dev
+- dynamic file names: ```__VAR_NAME__```
+- template files just need to end with ```.eta```

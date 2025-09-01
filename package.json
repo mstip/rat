@@ -1,6 +1,6 @@
 {
-  "name": "rat",
-  "version": "1.0.0",
+  "name": "@mstip/rat",
+  "version": "0.0.1",
   "description": "react admin templates",
   "keywords": [
     "templates"
@@ -8,9 +8,12 @@
   "license": "MIT",
   "author": "mstip",
   "type": "module",
-  "main": "index.mjs",
+  "main": "index.ts",
   "scripts": {
     "test": "node test"
+  },
+  "bin": {
+	  "rat": "index.ts"
   },
   "devDependencies": {
     "@types/node": "^24.3.0"
