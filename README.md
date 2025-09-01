@@ -5,7 +5,12 @@ lazy developers react admin templates and scripts 100% organic without ai
 - [DONE] copy and render logic
 - [SKIP] publish to npm and test if it works
 - [DONE] make package executable, test local and push to gh
-- continue with app dev: features, auth, crud views, custom views ...
+- [DONE] create layout
+- [DONE] auth with configurable auth sources
+- [DONE] theme
+- npm commands for eslint, prettier and playwright
+- crud feature generator (need a lot of general comps)
+- custom feature generator
 
 # Setup
 1. git clone the repo

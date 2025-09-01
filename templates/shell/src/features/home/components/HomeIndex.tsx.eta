@@ -1,0 +1,11 @@
+import { Button, Paper } from '@mui/material';
+import Typography from '@mui/material/Typography';
+
+export default function HomeIndex() {
+	return (
+		<Paper sx={{ p: 2 }}>
+			<Typography>Welcome to <%= it.name %></Typography>
+			<Button variant='contained'>Click me</Button>
+		</Paper>
+	)
+}

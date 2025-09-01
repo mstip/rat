@@ -1,0 +1,23 @@
+import DashboardIcon from '@mui/icons-material/Dashboard';
+import CloudIcon from '@mui/icons-material/Cloud';
+import type { Branding, Navigation } from '@toolpad/core/AppProvider';
+
+export const branding: Branding = {
+	title: '<%= it.name %>',
+};
+
+export const navigation: Navigation = [
+	{
+		kind: 'header',
+		title: 'Main items',
+	},
+	{
+		title: 'Home',
+		icon: <DashboardIcon />,
+	},
+	{
+		segment: 'demo',
+		title: 'Demo',
+		icon: <CloudIcon />,
+	},
+];

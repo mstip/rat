@@ -1,31 +1,14 @@
-import { Outlet, createRootRouteWithContext } from '@tanstack/react-router'
-import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools'
-import { TanstackDevtools } from '@tanstack/react-devtools'
-
-import TanStackQueryDevtools from '../lib/tanstack-query/devtools'
+import { createRootRouteWithContext } from '@tanstack/react-router'
 
 import type { QueryClient } from '@tanstack/react-query'
+import { doAuth } from '@/lib/auth/auth';
+import AppRoot from '@/components/AppRoot';
 
 interface MyRouterContext {
-  queryClient: QueryClient
+	queryClient: QueryClient
 }
 
 export const Route = createRootRouteWithContext<MyRouterContext>()({
-  component: () => (
-    <>
-      <Outlet />
-      <TanstackDevtools
-        config={{
-          position: 'bottom-left',
-        }}
-        plugins={[
-          {
-            name: 'Tanstack Router',
-            render: <TanStackRouterDevtoolsPanel />,
-          },
-          TanStackQueryDevtools,
-        ]}
-      />
-    </>
-  ),
-})
+    beforeLoad: async ({location}) => await doAuth(location),
+	component: () => <AppRoot />
+});
